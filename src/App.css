@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+.header-nav ul{
+  display: flex;
+  list-style: none;
+}
+.header-nav ul li{
+  padding-right: 40px;
+
+}
+.Nav{
+  background-color: #615243;
+  width: 300px;
+  height: 92vh;
+}
+.Nav select ,.Nav input,.Nav button{
+  display: block;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+}
+.main{
+  width: 100%;
+}
+.headMain{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(127, 159, 255);
+}
+.mainMain{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.mainlayout{
+  display: flex;
+}
+.mainelem{
+  background-color: blueviolet;
+  min-width: 300px;
+}
