@@ -11,10 +11,12 @@ import axios from "axios";
 //       "topilma"
 // console.log(style)
 const MainElem = (props) => {
-  const { title , cateogry, image, votes,type ,description,user,tags} = props.fikr;
+  const { title , cateogry, image, votes,type ,description,id,tags} = props.fikr;
 
-  const trash=()=>{
-    axios.delete(`http://188.225.31.249:3001/findings/${user}`)
+  const trash=(id)=>{
+    axios.delete(`http://188.225.31.249:3001/findings/${id}`).then((response => {
+      if (response.status === 200) { window.location.reload(false) }
+  }))
   }
   return <div className='mainelem'>
     <img className='elemImage' src={image} alt="" />
@@ -22,7 +24,7 @@ const MainElem = (props) => {
     <p>{description}</p>
     
     
-    <p onClick={()=>{trash(user)}}>Delete</p>
+    <p onClick={()=>{trash(id)}}>Delete</p>
 
     {/* {tags} */}
   </div>

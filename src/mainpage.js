@@ -12,7 +12,6 @@ function MainPage() {
       
       </div>
       <div className="hbp">
-                <Link className="btnVoted" to="/addelem">Add Elem</Link>
             </div>
     </div>
     
