@@ -17,7 +17,7 @@ const MainElem = (props) => {
     axios.delete(`http://188.225.31.249:3001/findings/${user}`)
   }
   return <div className='mainelem'>
-    <img className='elemImage' src={image} alt="" />
+    <img className='elemImage' width={300} style={{marginTop:10}} src={image} alt="" />
     <h3>{title}</h3>
     <p>{description}</p>
     

@@ -55,41 +55,23 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 .mainlayout{
   display: flex;
 }
 .mainelem{
-<<<<<<< HEAD
-  background-color: blueviolet;
-  width: 300px;
-  border-radius: 10px;
-  padding: 10px;
-}
-.elemImage{
-  max-width: 300px;
-  border-radius: 10px;
-}
-a{
-text-decoration: none;
-
-}
-.addelemLink{
-padding-left: 20px;
-font-size: 30px;
-background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
-color: azure;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  display: flex;
-  padding-top:40px ;
-}
-=======
   background-color: #d8d8d8;
   min-width: 300px;
   margin-top: 30px;
 }
->>>>>>> c3422886b2c3a9eebc3940a1de342372533618e4
+.addelemLink{
+  padding-left: 20px;
+  font-size: 30px;
+  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+  color: azure;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    padding-top:40px ;
+  }

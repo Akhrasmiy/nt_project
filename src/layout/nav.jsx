@@ -11,9 +11,9 @@ function Nav() {
                 </select>
                 
                 
-                <input type="text" name="" id="" placeholder="vaqt(dan)"/>
-                <input type="text" name="" id="" placeholder="vaqt(gacha)"/>
-                <button>filtrlash</button>
+                <input style={{marginTop: 20}} type="text" name="" id="" placeholder="vaqt(dan)"/>
+                <input style={{marginTop: 20}} type="text" name="" id="" placeholder="vaqt(gacha)"/>
+                <button style={{backgroundColor: '#a3b7f4', border: 'none', borderRadius: 0, marginTop: 20}}>filtrlash</button>
             </form>
         </div>
     );
