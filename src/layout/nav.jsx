@@ -15,8 +15,8 @@ function Nav() {
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-                <input style={{margin: 10}} type="text" name="" id="" placeholder="Vaqt (dan)"/>
-                <input style={{margin: 10}} type="text" name="" id="" placeholder="Vaqt (gacha)"/>
+                <input style={{margin: 10}} type="date" name="" id="" placeholder="Vaqt (dan)"/>
+                <input style={{margin: 10}} type="date" name="" id="" placeholder="Vaqt (gacha)"/>
                 <button style={{backgroundColor: '#a0b6f1', padding: 5, color: '#d2ddf3', margin: 10}} className="button">Filtrlash</button>
             </form>
         </div>

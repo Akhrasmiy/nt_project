@@ -15,16 +15,14 @@ const Main = () => {
   }, [])
   return (
     <main className="main">
-      <Headmain />
       <div className="mainMain">
       {fikrs.map((fikr,index)=>{
         return(
           <MainElem fikr={fikr} key={index} />
+
         )
       })}
       </div>
-      
-      
     </main>
   )
 }
