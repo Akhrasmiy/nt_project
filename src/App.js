@@ -1,14 +1,19 @@
-import './App.css';
-import Header from './layout/header';
-import Nav from './layout/nav';
-import Main from './layout/main';
+
+
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./mainpage";
+import Addelem from "./components/AddElem";
 function App() {
+  // console.log(inputref.current.value)
   return (
-    <div className="App">
-      <Header />
-      <div className='mainlayout'><Nav/>
-      <Main />
-      </div>
+    <div className='App'>
+
+
+      {/* routers  */}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/addelem" element={<Addelem />} />
+      </Routes>
     </div>
   );
 }
