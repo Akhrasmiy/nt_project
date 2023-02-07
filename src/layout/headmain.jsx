@@ -1,15 +1,7 @@
 function Headmain() {
     return (
-        <div className="headMain">
-            <div className='logo'>logo</div>
-            <div className="header-nav">
-                <ul>
-                    <li>Topib oldim</li>
-                    <li>yoqotdim</li>
-                    <li>kirish</li>
-                    <li>Ruyhatdan otish</li>
-                </ul>
-            </div>
+        <div style={{backgroundColor: '#d8d8d8', textAlign: "center"}} className="headMain">
+            Qidiruv
         </div>
     );
 }

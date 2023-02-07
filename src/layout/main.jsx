@@ -8,7 +8,7 @@ const Main = () => {
   const[fikrs,setfikr]=useState([])
   useEffect(()=>{
    axios
-      .get(`http://188.225.31.249:3001/feedbacks`)
+      .get(`http://188.225.31.249:3001/findings`)
       .then(data=>{
         setfikr(data.data)
       })
