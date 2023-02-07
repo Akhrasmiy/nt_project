@@ -2,7 +2,7 @@
 function Header() {
     return (
         <div className="header">
-            <div className='logo'>logo</div>
+            <div className='logo'><img src="./search.jpg"></img></div>
             <div className="header-nav">
                 <ul>
                     <li>Topib oldim</li>

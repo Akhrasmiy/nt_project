@@ -3,21 +3,21 @@ function Nav() {
     return (
         <div className="Nav">
             <form action="">
-                <select name="cars" id="cars">
-                    <option value="1">hudud</option>
+                <select style={{margin: 10}} name="cars" id="cars">
+                    <option value="1">Hudud</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-                <select name="cars" id="cars">
-                    <option value="1">category</option>
+                <select style={{margin: 10}} name="cars" id="cars">
+                    <option value="1">Category</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-                <input type="text" name="" id="" placeholder="vaqt(dan)"/>
-                <input type="text" name="" id="" placeholder="vaqt(gacha)"/>
-                <button>filtrlash</button>
+                <input style={{margin: 10}} type="text" name="" id="" placeholder="Vaqt (dan)"/>
+                <input style={{margin: 10}} type="text" name="" id="" placeholder="Vaqt (gacha)"/>
+                <button style={{backgroundColor: '#a0b6f1', padding: 5, color: '#d2ddf3', margin: 10}} className="button">Filtrlash</button>
             </form>
         </div>
     );
