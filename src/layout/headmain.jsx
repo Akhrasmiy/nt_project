@@ -10,7 +10,8 @@ function Headmain() {
                     <button className={("btnhead",state ? "activbtnmain" : "")} onClick={() => setState(true)}>Topilmalar</button>
                     <button className={("btnhead",!state ? "activbtnmain" : "")} onClick={() => setState(false)}>yoqotmalar</button>
                 </ul>
-            </div>
+            </div> 
+            
         </div>
     );
 }
