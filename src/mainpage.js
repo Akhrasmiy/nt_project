@@ -5,7 +5,7 @@ import Main from './layout/main';
 import { Link } from "react-router-dom";
 function MainPage() {
   return (
-    <div className="App">
+    <div className="MainPage">
       <Header />
       <div className='mainlayout'><Nav/>
       <Main />

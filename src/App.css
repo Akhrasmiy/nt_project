@@ -41,7 +41,7 @@ body{
   background-color: #ecf0e3;
   margin: 20px;
   padding: 30px;
-
+  overflow-x: auto;
   overflow: auto;
   height: 80%;
 }
@@ -89,3 +89,13 @@ color: azure;
   padding-top:40px ;
 }
 
+.activbtnmain{
+  background: #9a9d9f;
+}
+.mainHeadInput{
+  height: 40px;
+  width: 450px;
+}
+.btnhead{
+  width: 400px;
+}
