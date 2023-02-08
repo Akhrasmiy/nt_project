@@ -9,7 +9,6 @@ function Header() {
                     <li><Link  to="/addelem">Topib oldim</Link></li>
                     <li><Link  to="/addelem">yoqotdim</Link></li>
                     <li>kirish</li>
-
                     <li>Ruyhatdan otish</li>
                 </ul>
             </div>

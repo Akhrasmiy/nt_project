@@ -2,17 +2,6 @@ import React, { useRef } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-// console.log(style)
-// "title": "Passport topib oldim",
-//     "user": 2,
-//     "cateogry": 1,
-//     "type": "finding",
-//     "description": "Muqimiy ko'chaga qayrilishda passport topib oldim",
-//     "image": "https://images.unsplash.com/photo-1454496406107-dc34337da8d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80",
-//     "tags": [
-//       "hujjat",
-//       "topilma"
-// console.log(style)
 const Addelem = () => {
     const titleref = useRef(null)
     const descriptionref = useRef(null)

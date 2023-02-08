@@ -3,7 +3,6 @@ import Headmain from "./headmain";
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from "react";
-import { Link } from "react-router-dom";
 const Main = () => {
   const [fikrs, setfikr] = useState([]);
   const [update, setUpdate] = useState(0)
