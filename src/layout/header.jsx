@@ -1,9 +1,8 @@
-import logo from "./Untitled1.png"
+import logo from "./logo.png"
 function Header() {
     return (
         <div className="header">
             <img src={logo} width="100px" height="100px"></img>
-            <div className='logo'>logo</div>
             <div className="header-nav">
                 <ul>
                     <li>Topib oldim</li>
