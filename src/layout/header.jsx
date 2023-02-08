@@ -8,6 +8,7 @@ function Header() {
                     <li>Topib oldim</li>
                     <li>yoqotdim</li>
                     <li>kirish</li>
+                    
                     <li>Ruyhatdan otish</li>
                 </ul>
             </div>
