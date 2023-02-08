@@ -15,7 +15,9 @@ const MainElem = (props) => {
 
   const trash=(id)=>{
     axios.delete(`http://188.225.31.249:3001/findings/${id}`).then((response => {
-      if (response.status === 200) { window.location.reload(false) }
+      if (response.status === 200) {
+        props.setUpdate(u => u+1)
+      }
   }))
   }
   return <div className='mainelem'>

@@ -5,14 +5,17 @@ import axios from 'axios';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Main = () => {
-  const [fikrs, setfikr] = useState([])
+  const [fikrs, setfikr] = useState([]);
+  const [update, setUpdate] = useState(0)
+
   useEffect(() => {
     axios
       .get(`http://188.225.31.249:3001/findings`)
-      .then(data => {
-        setfikr(data.data)
+      .then(response => {
+        setfikr(response.data)
       })
-  }, [])
+  }, [update])
+
   return (
     <main className="main">
       <Headmain />
@@ -20,7 +23,7 @@ const Main = () => {
         <Link className="addelemLink" to="/addelem">E'lon berish</Link>
         {fikrs.map((fikr, index) => {
           return (
-            <MainElem fikr={fikr} key={index} />
+            <MainElem fikr={fikr} key={index} setUpdate={setUpdate} />
 
           )
 
