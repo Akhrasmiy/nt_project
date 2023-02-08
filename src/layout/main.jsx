@@ -20,7 +20,6 @@ const Main = () => {
     <main className="main">
       <Headmain />
       <div className="mainMain">
-        <Link className="addelemLink" to="/addelem">E'lon berish</Link>
         {fikrs.map((fikr, index) => {
           return (
             <MainElem fikr={fikr} key={index} setUpdate={setUpdate} />
