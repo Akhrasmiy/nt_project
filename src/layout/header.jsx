@@ -1,3 +1,5 @@
+import logo from "./logo.svg"
+
 import React from 'react'
 import { Route, Routes, Link } from 'react-router-dom';
 
@@ -5,7 +7,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 function Header() {
     return (
         <div className="header">
-            Logo    
+            <img src={logo} width="80px"></img>
             <div className="header-nav">
                 <ul>
                     <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/find'>Topib oldim</Link>
