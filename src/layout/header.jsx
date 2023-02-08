@@ -4,7 +4,9 @@ function Header() {
     
     return (
         <div className="header">
+            <a href="">
             <img src={logo} width="100px" height="100px" alt="topilma rasmi"></img>
+            </a>
             <div className="header-nav">
                 <ul>
                     <li><Link  to="/addelem/topidim">Topib oldim</Link></li>
@@ -14,6 +16,7 @@ function Header() {
                 </ul>
             </div>
         </div>
+        
     );
 }
 
