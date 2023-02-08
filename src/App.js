@@ -12,7 +12,7 @@ function App() {
       {/* routers  */}
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/addelem" element={<Addelem />} />
+        <Route path="/addelem/:type" element={<Addelem />} />
       </Routes>
     </div>
   );
