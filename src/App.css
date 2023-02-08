@@ -103,6 +103,9 @@ text-decoration: none;
   left: 30px;
 
 }
+.nomsiz h1{
+  margin-left: 20px;
+}
 .nomsizbutton{
   margin-top: 20px;
   position: relative;
