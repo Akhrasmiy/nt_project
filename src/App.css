@@ -77,7 +77,37 @@ a{
 text-decoration: none;
 
 }
+.addFed{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.nomsiz{
+  text-align: start;
+  width: 400px;
+  height: 550px;
+  background-color: #b6ddbf;
+  position: relative;
+}
+.nomsiz input,.nomsiz select,.nomsiz button {
+  width: 350px;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+}
+.nomsiz label{
+  tab-size: 20px;
+  color: #186a2b;
+  position: relative;
+  left: 30px;
 
+}
+.nomsizbutton{
+  margin-top: 20px;
+  position: relative;
+  top: 10px;
+}
 .activbtnmain{
   background: #9a9d9f;
 }

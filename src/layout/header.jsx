@@ -10,7 +10,7 @@ function Header() {
                     <li><Link  to="/addelem/topidim">Topib oldim</Link></li>
                     <li><Link  to="/addelem/yoqotdim">yoqotdim</Link></li>
                     <li>kirish</li>
-                    <li>Ruyhatdan otish</li>
+                    <li><Link  to="/regester">Ruyhatdan otish</Link></li>
                 </ul>
             </div>
         </div>
