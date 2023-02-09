@@ -1,5 +1,6 @@
 import React, {  } from 'react';
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
 // "title": "Passport topib oldim",
 //     "user": 2,
 //     "cateogry": 1,
@@ -12,7 +13,7 @@ import axios from "axios";
 // console.log(style)
 const MainElem = (props) => {
   const { title , cateogry, image, votes,type ,description,id,tags} = props.fikr;
-
+  const{t}=useTranslation()
   const trash=(id)=>{
     axios.delete(`http://188.225.31.249:3001/findings/${id}`).then((response => {
       if (response.status === 200) {
@@ -26,7 +27,7 @@ const MainElem = (props) => {
     <p>{description}</p>
     
     
-    <p style={{cursor: 'pointer', backgroundColor: 'red', padding: 5, width: 60, color: 'white', borderRadius: 20}} onClick={()=>{trash(id)}}>Delete</p>
+    <p style={{cursor: 'pointer', backgroundColor: 'red', padding: 5, width: 60, color: 'white', borderRadius: 20}} onClick={()=>{trash(id)}}>{t("Delete")}</p>
 
     {/* {tags} */}
   </div>

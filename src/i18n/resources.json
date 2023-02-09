@@ -6,7 +6,11 @@
       "Topilmalar":"findings",
       "Topib oldim":"I found it",
       "Yoqotdim":"i lost it",
-      "Yoqotmalar":"lostings"
+      "Yoqotmalar":"lostings",
+      "kirish":"sign in",
+      "Ruyhatdan o'tish":"sign un",
+      "Filtrlash":"Filter",
+      "Delete":"delete"
     }
   }, 
   "uz":{
@@ -16,8 +20,11 @@
       "Topilmalar":"topilmalar",
       "Topib oldim":"Topib oldim",
       "Yoqotdim":"Yoqotdim",
-      "Yoqotmalar":"Yoqotmalar"
-
+      "Yoqotmalar":"Yoqotmalar",
+      "kirish":"kirish",
+      "Ruyhatdan o'tish":"Ruyhatdan otish",
+      "Filtrlash":"Saralash",
+      "Delete":"o'chirish"
     }
   }
 }

@@ -1,5 +1,6 @@
-
+import { Translation, useTranslation } from "react-i18next";
 function Nav() {
+    const {t}=useTranslation()
     return (
         <div className="Nav">
             <form action="">
@@ -13,7 +14,7 @@ function Nav() {
                 
                 <input style={{marginTop: 20}} type="text" name="" id="" placeholder="vaqt(dan)"/>
                 <input style={{marginTop: 20}} type="text" name="" id="" placeholder="vaqt(gacha)"/>
-                <button style={{backgroundColor: '#a3b7f4', border: 'none', borderRadius: 0, marginTop: 20}}>Filtrlash</button>
+                <button style={{backgroundColor: '#a3b7f4', border: 'none', borderRadius: 0, marginTop: 20}}>{t("Filtrlash")}</button>
             </form>
         </div>
     );

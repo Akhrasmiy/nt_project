@@ -9,7 +9,6 @@ const Addelem = () => {
     const descriptionref = useRef(null)
     const imageref = useRef(null)
     const tagsref = useRef(null)
-    const typeref = useRef(null)
     const cateogryref = useRef(null)
     const navigate = useNavigate()
     function abbos(data) {
@@ -34,24 +33,23 @@ const Addelem = () => {
     }
 
     return <div className="addFed">
-        <div>
-            <input placeholder='Title' ref={titleref} />
-            <input placeholder='description' ref={descriptionref} />
-            <input placeholder='image' ref={imageref} />
-
-            <select name="type" id="" ref={typeref}>
-                <option value="Topdim">topib oldim</option>
-                <option value="Yuqotdim">Yoqotdim</option>
-                
-            </select>
-
-            <select name="tags" id="" ref={tagsref}>
+        <div className='nomsiz'>
+            <h1>e'lon berish</h1>
+            <label htmlFor="title">Title</label>
+            <input placeholder='Title' ref={titleref} id="title" />
+            <label htmlFor="description" >Description</label>
+            <input placeholder='description' ref={descriptionref} id="description" />
+            <label htmlFor="image">Image</label>
+            <input placeholder='image' id='image' ref={imageref} />
+            <label htmlFor="tags">Tags</label>
+            <select name="tags" id="tags" ref={tagsref}>
                 <option value="1">pul</option>
                 <option value="hujjat">hujjat</option>
                 <option value="pul">pul</option>
                 <option value="buyum">buyum</option>
             </select>
-            <select name="cateogry" id="" ref={cateogryref}>
+            <label htmlFor="category">Category</label>
+            <select name="cateogry" id="category" ref={cateogryref}>
                 <option value="1">bugun</option>
                 <option value="2">shu hafta</option>
                 <option value="3">shu oy</option>
@@ -60,15 +58,14 @@ const Addelem = () => {
 
 
 
-            <button onClick={() => {
+            <button className='nomsizbutton' onClick={() => {
                 const data = {
                     title: titleref.current.value,
                     description: descriptionref.current.value,
                     tags: tagsref.current.value,
                     image: imageref.current.value,
                     cateogry: cateogryref.current.value,
-                    type:typeref.current.value
-                    // type:typeref.current.value
+                   
                 }
                 abbos(data)
             }
