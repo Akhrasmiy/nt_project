@@ -4,7 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 import App from './App';
-
+import i18next from 'i18next';
+import resources from "./i18n/resources.json"
+import "./i18n"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

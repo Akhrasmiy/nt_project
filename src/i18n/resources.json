@@ -1,0 +1,23 @@
+{
+  "en": {
+    "translation": {
+      "SayHello": "Welcome to React and react-i18next",
+      "salom":"en",
+      "Topilmalar":"findings",
+      "Topib oldim":"I found it",
+      "Yoqotdim":"i lost it",
+      "Yoqotmalar":"lostings"
+    }
+  }, 
+  "uz":{
+    "translation":{
+      "SayHello": "salom",
+      "salom":"uz",
+      "Topilmalar":"topilmalar",
+      "Topib oldim":"Topib oldim",
+      "Yoqotdim":"Yoqotdim",
+      "Yoqotmalar":"Yoqotmalar"
+
+    }
+  }
+}
