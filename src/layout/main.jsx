@@ -3,7 +3,6 @@ import Headmain from "./headmain";
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from "react";
-import { Link } from "react-router-dom";
 const Main = () => {
 
   const [fikrs, setfikr] = useState([]);
@@ -22,7 +21,6 @@ const Main = () => {
     <main className="main">
       <Headmain />
       <div className="mainMain">
-        <Link className="addelemLink" to="/addelem">E'lon berish</Link>
         {fikrs.map((fikr, index) => {
           return (
             <MainElem fikr={fikr} key={index} setUpdate={setUpdate} />

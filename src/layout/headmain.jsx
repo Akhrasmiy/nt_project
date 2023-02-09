@@ -8,7 +8,7 @@ function Headmain() {
                 <ul>
                     <input type="text" placeholder="Qidiruv" className='mainHeadInput' />
                     <button className={("btnhead",state ? "activbtnmain" : "")} onClick={() => setState(true)}>Topilmalar</button>
-                    <button className={("btnhead",!state ? "activbtnmain" : "")} onClick={() => setState(false)}>Yoqotmalar</button>
+                    <button className={("btnhead",!state ? "activbtnmain" : "")} onClick={() => setState(false)}>yoqotmalar</button>
                 </ul>
             </div> 
         </div>
