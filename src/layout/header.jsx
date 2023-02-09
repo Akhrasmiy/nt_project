@@ -1,4 +1,4 @@
-import logo from "./logo.svg"
+import logo from "./logo/Losts`1.png"
 
 import React from 'react'
 import { Route, Routes, Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 function Header() {
     return (
         <div className="header">
-            <img src={logo} width="80px"></img>
+            <img src={logo} width="70px"></img>
 
             <div className="header-nav">
                 <ul>
