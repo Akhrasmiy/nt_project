@@ -1,5 +1,4 @@
 
-import logo from "./logo.svg"
 import { useTranslation } from 'react-i18next';
 
 import logo from "./logo/Losts`1.png"
