@@ -11,10 +11,10 @@ function Header() {
 
             <div className="header-nav">
                 <ul>
-                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/find'>Topib oldim</Link>
-                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/lost'>Yoqotdim</Link>
+                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to="/addelem/topdim">Topib oldim</Link>
+                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to="/addelem/yoqotdim">Yoqotdim</Link>
                     <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/sign-in'>Kirish</Link>
-                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/sign-up'>Ruyhatdan otish</Link>
+                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/regester'>Ruyhatdan o'tish</Link>
                 </ul>
             </div>
         </div>
