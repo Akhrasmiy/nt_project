@@ -8,6 +8,7 @@ function Header() {
     return (
         <div className="header">
             <img src={logo} width="80px"></img>
+
             <div className="header-nav">
                 <ul>
                     <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/find'>Topib oldim</Link>
