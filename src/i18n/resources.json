@@ -3,14 +3,14 @@
     "translation": {
       "SayHello": "Welcome to React and react-i18next",
       "salom":"en",
-      "Topilmalar":"findings",
+      "Topilmalar":"Findings",
       "Topib oldim":"I found it",
-      "Yoqotdim":"i lost it",
-      "Yoqotmalar":"lostings",
-      "kirish":"sign in",
-      "Ruyhatdan o'tish":"sign up",
+      "Yoqotdim":"I lost it",
+      "Yoqotmalar":"Lostings",
+      "kirish":"Sign in",
+      "Ruyhatdan o'tish":"Sign up",
       "Filtrlash":"Filter",
-      "Delete":"delete",
+      "Delete":"Delete",
       "e'lon berish":"Announcement",
       "Title":"Title"
     }
@@ -19,14 +19,14 @@
     "translation":{
       "SayHello": "salom",
       "salom":"uz",
-      "Topilmalar":"topilmalar",
+      "Topilmalar":"Topilmalar",
       "Topib oldim":"Topib oldim",
       "Yoqotdim":"Yoqotdim",
       "Yoqotmalar":"Yoqotmalar",
-      "kirish":"kirish",
+      "kirish":"Kirish",
       "Ruyhatdan o'tish":"Ruyhatdan otish",
       "Filtrlash":"Saralash",
-      "Delete":"o'chirish",
+      "Delete":"O'chirish",
       "e'lon berish":"E'lon berish",
       "Title":"Sarlovha"
     }

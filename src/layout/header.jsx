@@ -18,7 +18,7 @@ function Header() {
                 <ul>
                     <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to="/addelem/topdim">{t("Topib oldim")}</Link>
                     <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to="/addelem/yoqotdim">{t("Yoqotdim")}</Link>
-                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/sign-in'>{t("kirish")}</Link>
+                    <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/sign-in'>{t("Kirish")}</Link>
                     <Link style={{marginRight: 40, textDecoration: 'none', color: 'white'}} to='/regester'>{t("Ruyhatdan o'tish")}</Link>
                 </ul>
             </div>
