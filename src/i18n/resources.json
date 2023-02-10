@@ -12,7 +12,8 @@
       "Filtrlash":"Filter",
       "Delete":"Delete",
       "e'lon berish":"Announcement",
-      "Title":"Title"
+      "Title":"Title",
+      "Kirish":"Sign In"
     }
   }, 
   "uz":{
@@ -28,7 +29,8 @@
       "Filtrlash":"Saralash",
       "Delete":"O'chirish",
       "e'lon berish":"E'lon berish",
-      "Title":"Sarlovha"
+      "Title":"Sarlovha",
+      "Kirish":"Kirish"
     }
   }
 }
