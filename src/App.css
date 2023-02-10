@@ -1,10 +1,12 @@
-body{
+body {
   background-color: #d8d8d8;
 }
 
-.App{
+.App {
   flex-wrap: nowrap;
   height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header {
@@ -15,116 +17,145 @@ body{
   padding: 5px;
   margin: 10px;
 }
-.header-nav ul{
+
+.header-nav ul {
   display: flex;
   list-style: none;
 }
-.header-nav ul li{
+
+.header-nav ul li {
   padding-right: 40px;
 
 }
-.Nav{
+
+.Nav {
   background-color: #f7fbda;
   width: 300px;
   height: 92vh;
   padding: 15px;
   margin: 10px;
+  
 }
-.Nav select ,.Nav input,.Nav button{
+
+.Nav select,
+.Nav input,
+.Nav button {
   display: block;
   width: 200px;
   height: 30px;
   border-radius: 5px;
 }
-.main{
+
+.main {
   width: 100%;
   background-color: #ecf0e3;
   margin: 20px;
   padding: 30px;
-  overflow-x: auto;
+  
   overflow: auto;
-  height: 80%;
+  height: 100%;
 }
-.headMain{
+
+.headMain {
   display: flex;
   align-items: center;
   background-color: #d8d8d8;
   padding: 10px;
 }
-.mainMain{
+
+.mainMain {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 80px;
 }
-.mainlayout{
+
+.mainlayout {
   display: flex;
+  height: 86vh;
+  padding: 10px;
 }
-.mainelem{
+
+.mainelem {
   background-color: #d8d8d8;
   min-width: 300px;
   margin-top: 30px;
 }
-.addelemLink{
+
+.addelemLink {
   margin-top: 30px;
   padding-left: 20px;
   font-size: 30px;
   background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
   color: azure;
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
-    display: flex;
-    padding-top:40px ;
-  }
-.elemImage{
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  padding-top: 40px;
+}
+
+.elemImage {
   max-width: 300px;
   border-radius: 10px;
 }
-a{
-text-decoration: none;
+
+a {
+  text-decoration: none;
 
 }
-.addFed{
+
+.addFed {
   display: flex;
   justify-content: center;
   height: 100vh;
   align-items: center;
 }
-.nomsiz{
+
+.nomsiz {
   text-align: start;
   width: 400px;
   height: 550px;
   background-color: #b6ddbf;
   position: relative;
 }
-.nomsiz input,.nomsiz select,.nomsiz button {
+
+.nomsiz input,
+.nomsiz select,
+.nomsiz button {
   width: 350px;
   height: 30px;
   display: block;
   margin: 10px auto;
 }
-.nomsiz label{
+
+.nomsiz label {
   tab-size: 20px;
   color: #186a2b;
   position: relative;
   left: 30px;
 
 }
-.nomsiz h1{
+
+.nomsiz h1 {
   margin-left: 20px;
 }
-.nomsizbutton{
+
+.nomsizbutton {
   margin-top: 20px;
   position: relative;
   top: 10px;
 }
-.activbtnmain{
+
+.activbtnmain {
   background: #9a9d9f;
 }
-.mainHeadInput{
+
+.mainHeadInput {
   height: 40px;
   width: 450px;
 }
-.btnhead{
+
+.btnhead {
   width: 400px;
 }
