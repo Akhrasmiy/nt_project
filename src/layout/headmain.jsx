@@ -1,20 +1,24 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { getlanguagefromlocalstorage,setlanguagetolocalstorage } from '../utils/storage';
+import { getlanguagefromlocalstorage, setlanguagetolocalstorage } from '../utils/storage';
 function Headmain() {
     const [state, setState] = useState(true)
+    const [lan, setlan] = useState(getlanguagefromlocalstorage())
+
     const { t, i18n } = useTranslation()
-    console.log(getlanguagefromlocalstorage())
-    const {lan,setlan}=useState(getlanguagefromlocalstorage())
+    
     function handleselect(e) {
         console.log(e.target.value)
         i18n.changeLanguage(e.target.value)
         setlanguagetolocalstorage(e.target.value)
         setlan(e.target.value)
     }
+
     useEffect(() => {
         const language = getlanguagefromlocalstorage()
-        i18n.changeLanguage(language)    }, [])
+        i18n.changeLanguage(language)
+    }, [])
+
     return (
         <div style={{ backgroundColor: '#d8d8d8', textAlign: "center" }} className="headMain">
             <div className="header-nav">

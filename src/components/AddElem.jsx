@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Addelem = () => {
+    const {t}=useTranslation()
     const { type } = useParams();
-    console.log(type); // 123
     const titleref = useRef(null)
     const descriptionref = useRef(null)
     const imageref = useRef(null)
@@ -34,12 +35,12 @@ const Addelem = () => {
 
     return <div className="addFed">
         <div className='nomsiz'>
-            <h1>e'lon berish</h1>
-            <label htmlFor="title">Title</label>
+            <h1>{t("e'lon berish")}</h1>
+            <label htmlFor="title">{t("Title")}</label>
             <input placeholder='Title' ref={titleref} id="title" />
-            <label htmlFor="description" >Description</label>
+            <label htmlFor="description" >{t("Description")}</label>
             <input placeholder='description' ref={descriptionref} id="description" />
-            <label htmlFor="image">Image</label>
+            <label htmlFor="image">{t("Image")}</label>
             <input placeholder='image' id='image' ref={imageref} />
             <label htmlFor="tags">Tags</label>
             <select name="tags" id="tags" ref={tagsref}>

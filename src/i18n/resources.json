@@ -8,9 +8,11 @@
       "Yoqotdim":"i lost it",
       "Yoqotmalar":"lostings",
       "kirish":"sign in",
-      "Ruyhatdan o'tish":"sign un",
+      "Ruyhatdan o'tish":"sign up",
       "Filtrlash":"Filter",
-      "Delete":"delete"
+      "Delete":"delete",
+      "e'lon berish":"Announcement",
+      "Title":"Title"
     }
   }, 
   "uz":{
@@ -24,7 +26,9 @@
       "kirish":"kirish",
       "Ruyhatdan o'tish":"Ruyhatdan otish",
       "Filtrlash":"Saralash",
-      "Delete":"o'chirish"
+      "Delete":"o'chirish",
+      "e'lon berish":"E'lon berish",
+      "Title":"Sarlovha"
     }
   }
 }
