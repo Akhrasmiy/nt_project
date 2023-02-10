@@ -34,7 +34,7 @@ const Regester = () => {
             <label htmlFor="password">Parol kiriting</label>
             <input type={'password'} placeholder='password' id='password' ref={passwordref} />
             <label htmlFor="submitpassword">Parolni qayta tering</label>
-            <input type={'password'} placeholder='image' id='submitpassword' ref={submitpasswordref} />
+            <input type={'password'} placeholder='submit password' id='submitpassword' ref={submitpasswordref} />
 
 
             <button className='nomsizbutton' onClick={() => {
