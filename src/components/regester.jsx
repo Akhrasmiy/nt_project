@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import axios from 'axios';
 import { useNavigate} from 'react-router-dom';
-
+import { Button } from 'antd';
 const Regester = () => {
     const firstnameref = useRef(null)
     const surnameref = useRef(null)
@@ -37,7 +37,7 @@ const Regester = () => {
             <input type={'password'} placeholder='submit password' id='submitpassword' ref={submitpasswordref} />
 
 
-            <button className='nomsizbutton' onClick={() => {
+            <Button type="primary" className='nomsizbutton' onClick={() => {
                 const data = {
                     firstname: firstnameref.current.value,
                     surname: surnameref.current.value,
@@ -48,7 +48,7 @@ const Regester = () => {
                 regester(data)
             }
 
-            }>Save</button>
+            }>Save</Button>
 
         </div>
 

@@ -1,6 +1,7 @@
 import React, {  } from 'react';
 import axios from "axios";
 import { useTranslation } from 'react-i18next';
+import { Button } from 'antd';
 // "title": "Passport topib oldim",
 //     "user": 2,
 //     "cateogry": 1,
@@ -27,7 +28,7 @@ const MainElem = (props) => {
     <p>{description}</p>
     
     
-    <p style={{cursor: 'pointer', backgroundColor: 'red', padding: 5, width: 60, color: 'white', borderRadius: 20}} onClick={()=>{trash(id)}}>{t("Delete")}</p>
+    <Button  type="primary" danger style={{}} onClick={()=>{trash(id)}}>{t("Delete")}</Button>
 
     {/* {tags} */}
   </div>

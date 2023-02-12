@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SettingOutlined } from '@ant-design/icons';
-import { Cascader, Input, Select, Space } from 'antd';
+import {Button, Cascader, Input, Select, Space } from 'antd';
 
 const { Option } = Select;
 const Addelem = () => {
@@ -60,8 +60,7 @@ const Addelem = () => {
                 <option value="4">shu yil</option>
             </select>
 
-            
-            <button className='nomsizbutton' onClick={() => {
+            <Button type="primary"  className='nomsizbutton'onClick={() => {
                 const data = {
                     title: titleref.current.value,
                     description: descriptionref.current.value,
@@ -73,7 +72,7 @@ const Addelem = () => {
                 abbos(data)
             }
 
-            }>{t("Save")}</button>
+            }>{t("Save")}</Button>
 
         </div>
 
