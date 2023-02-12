@@ -9,10 +9,12 @@ const Regester = () => {
     const passwordref = useRef(null)
     const submitpasswordref = useRef(null)
     const navigate = useNavigate()
+    
     function regester(data) {
         let a = "sizning xatolariz\n "
         
-        if (data.password === data.submitpassword && data.phoneNumber.length === 9 && data.password.length >= 8) { navigate('/') }
+        if (data.password === data.submitpassword && data.phoneNumber.length === 9 && data.password.length >= 8) { navigate('/') 
+    }
         else {
             if (data.password !== data.submitpassword) a = a + "parol mos emas\n"
             if (data.phoneNumber.length !== 9) a = a + "telifon raqamni operator kodidan boshlab kirdiring (90 900 09 90) \n"
@@ -35,7 +37,7 @@ const Regester = () => {
             <input type={'password'} placeholder='password' id='password' ref={passwordref} />
             <label htmlFor="submitpassword">Parolni qayta tering</label>
             <input type={'password'} placeholder='submit password' id='submitpassword' ref={submitpasswordref} />
-
+    
 
             <Button type="primary" className='nomsizbutton' onClick={() => {
                 const data = {
