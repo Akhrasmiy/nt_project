@@ -2,9 +2,12 @@ import React, { useRef } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { SettingOutlined } from '@ant-design/icons';
+import { Cascader, Input, Select, Space } from 'antd';
 
+const { Option } = Select;
 const Addelem = () => {
-    const {t}=useTranslation()
+    const { t } = useTranslation()
     const { type } = useParams();
     const titleref = useRef(null)
     const descriptionref = useRef(null)
@@ -42,14 +45,14 @@ const Addelem = () => {
             <input placeholder='description' ref={descriptionref} id="description" />
             <label htmlFor="image">{t("Image")}</label>
             <input placeholder='image' id='image' ref={imageref} />
-            <label htmlFor="tags">Tags</label>
+            <label htmlFor="tags">{t("Turlar")}</label>
             <select name="tags" id="tags" ref={tagsref}>
                 <option value="1">pul</option>
                 <option value="hujjat">hujjat</option>
                 <option value="pul">pul</option>
                 <option value="buyum">buyum</option>
             </select>
-            <label htmlFor="category">Category</label>
+            <label htmlFor="category">{t("Vaqt")}</label>
             <select name="cateogry" id="category" ref={cateogryref}>
                 <option value="1">bugun</option>
                 <option value="2">shu hafta</option>
@@ -57,8 +60,7 @@ const Addelem = () => {
                 <option value="4">shu yil</option>
             </select>
 
-
-
+            
             <button className='nomsizbutton' onClick={() => {
                 const data = {
                     title: titleref.current.value,
@@ -66,12 +68,12 @@ const Addelem = () => {
                     tags: tagsref.current.value,
                     image: imageref.current.value,
                     cateogry: cateogryref.current.value,
-                   
+
                 }
                 abbos(data)
             }
 
-            }>Save</button>
+            }>{t("Save")}</button>
 
         </div>
 

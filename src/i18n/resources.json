@@ -13,7 +13,13 @@
       "Delete":"Delete",
       "e'lon berish":"Announcement",
       "Title":"Title",
-      "Kirish":"Sign In"
+      "Kirish":"Sign In",
+      "Image":"Image",
+      "Turlar":"Тypes",
+      "Vaqt":"Time",
+      "Save":"Save",
+      "Description":"Description"
+
     }
   }, 
   "uz":{
@@ -30,7 +36,36 @@
       "Delete":"O'chirish",
       "e'lon berish":"E'lon berish",
       "Title":"Sarlovha",
-      "Kirish":"Kirish"
+      "Kirish":"Kirish",
+      "Image":"Surat",
+      "Turlar":"Тurlar",
+      "Vaqt":"Vaqt",
+      "Save":"Saqlash",
+      "Description":"Izoh"
+
+    }
+  },
+  "ru":{
+    "translation":{
+      "SayHello":  "Здравствуйте",
+      "salom":"ru",
+      "Topilmalar":"Выводы",
+      "Topib oldim":"Я нашел это",
+      "Yoqotdim":"Я проиграл",
+      "Yoqotmalar":"Я проиграл",
+      "kirish":"Логин",
+      "Ruyhatdan o'tish":"Регстрация",
+      "Filtrlash":"Сортировка",
+      "Delete":"Удалить",
+      "e'lon berish":"Объявление",
+      "Title":"Название",
+      "Kirish":"Логин",
+      "Image":"Картина",
+      "Turlar":"Типы",
+      "Vaqt":"Время",
+      "Description":"Описание",
+      "Save":"Отправить"
+
     }
   }
 }

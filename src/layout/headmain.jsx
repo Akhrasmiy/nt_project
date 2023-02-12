@@ -29,6 +29,7 @@ function Headmain() {
                     <select name="" id="" onChange={handleselect} value={lan}>
                         <option value="uz">uz</option>
                         <option value="en">en</option>
+                        <option value="ru">ru</option>
                     </select>
                 </ul>
             </div>
