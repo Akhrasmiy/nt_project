@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getlanguagefromlocalstorage, setlanguagetolocalstorage } from '../utils/storage';
-function Headmain() {
+function Headmain(props) {
+    const setType = props.setType
     const [state, setState] = useState(true)
     const [lan, setlan] = useState(getlanguagefromlocalstorage())
 
     const { t, i18n } = useTranslation()
-    
+
     function handleselect(e) {
         console.log(e.target.value)
         i18n.changeLanguage(e.target.value)
@@ -24,8 +25,15 @@ function Headmain() {
             <div className="header-nav">
                 <ul>
                     <input type="text" placeholder="Qidiruv" className='mainHeadInput' />
-                    <button className={("btnhead", state ? "activbtnmain" : "")} onClick={() => setState(true)}>{t("Topilmalar")}</button>
-                    <button className={("btnhead", !state ? "activbtnmain" : "")} onClick={() => setState(false)}>{t("Yoqotmalar")}</button>
+                    <button className={("btnhead", state ? "activbtnmain" : "")} onClick={() => {
+                        setState(true)
+                        setType("topdim")
+                    }}>{t("Topilmalar")}</button>
+                    <button className={("btnhead", !state ? "activbtnmain" : "")} onClick={() => {
+                        setState(false)
+                        setType("yoqotdim")
+                    }
+                    }>{t("Yoqotmalar")}</button>
                     <select name="" id="" onChange={handleselect} value={lan}>
                         <option value="uz">uz</option>
                         <option value="en">en</option>

@@ -14,6 +14,8 @@ import { Button } from 'antd';
 // console.log(style)
 const MainElem = (props) => {
   const { title , cateogry, image, votes,type ,description,id,tags} = props.fikr;
+  const getType=props.type
+  
   const{t}=useTranslation()
   const trash=(id)=>{
     axios.delete(`http://188.225.31.249:3001/findings/${id}`).then((response => {

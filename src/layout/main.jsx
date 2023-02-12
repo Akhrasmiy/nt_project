@@ -6,6 +6,7 @@ import { useState } from "react";
 const Main = () => {
 
   const [fikrs, setfikr] = useState([]);
+  const [type, setType] = useState("topdim")
   const [update, setUpdate] = useState(0)
 
 
@@ -19,14 +20,15 @@ const Main = () => {
 
   return (
     <main className="main">
-      <Headmain />
+      <Headmain setType={setType} />
       <div className="mainMain">
         {fikrs.map((fikr, index) => {
-          return (
-            <MainElem fikr={fikr} key={index} setUpdate={setUpdate} />
+          if (fikr.type == type) {
+            return (
+              <MainElem fikr={fikr} key={index} setUpdate={setUpdate} />
 
-          )
-
+            )
+          }
         })}
 
       </div>
