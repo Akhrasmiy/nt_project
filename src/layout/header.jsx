@@ -9,7 +9,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 
 function Header() {
     const {t,i18n}=useTranslation()
-
+    localStorage.setItem("src","")
     return (
         <div className="header">
             <img src={logo} width="70px"></img>
