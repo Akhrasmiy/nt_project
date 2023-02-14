@@ -49,10 +49,10 @@
     "translation":{
       "SayHello":  "Здравствуйте",
       "salom":"ru",
-      "Topilmalar":"Выводы",
+      "Topilmalar":"Находки",
       "Topib oldim":"Я нашел это",
-      "Yoqotdim":"Я проиграл",
-      "Yoqotmalar":"Я проиграл",
+      "Yoqotdim":"Я потерял это",
+      "Yoqotmalar":"Потери",
       "kirish":"Логин",
       "Ruyhatdan o'tish":"Регстрация",
       "Filtrlash":"Сортировка",
