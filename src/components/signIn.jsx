@@ -12,7 +12,26 @@ const SignIn = () => {
     function regester(data) {
         let a = "sizning xatolariz\n "
 
-        if (data.password.length >= 8) { navigate('/') }
+        if (data.password.length >= 8) {
+            // navigate('/')
+           
+            const src = "http://188.225.31.249:8000/api/v1/login/"
+            axios.post(src, {
+                "username": data.username,
+                "password": data.password,
+            }
+
+            ).then((response => {
+                console.log(response.data)
+                if (response.status === 200) { 
+                    console.log(response.data)
+                    localStorage.setItem("login",response.data)
+                    navigate('/')
+                 }
+            }))
+
+
+        }
         else {
             if (data.phoneNumber.length !== 9) a = a + "telifon raqamni operator kodidan boshlab kirdiring (90 900 09 90) \n"
             if (data.password.length < 8) a = a + "parol uzunligi sakkizdan katta yoki teng bolishi kerak"
@@ -26,14 +45,14 @@ const SignIn = () => {
             <div>
                 <h1>Hisobga kirish</h1>
                 <label htmlFor="yourPhoneNumber">Your phone number</label>
-                <input type={'number'} placeholder='phoneNumber' id='yourPhoneNumber' ref={phoneNumberref} />
+                <input type={'text'} placeholder='phoneNumber' id='yourPhoneNumber' ref={phoneNumberref} />
                 <label htmlFor="password">Parol kiriting</label>
                 <input type={'password'} placeholder='password' id='password' ref={passwordref} />
 
 
                 <Button type="primary" className='nomsizbutton' onClick={() => {
                     const data = {
-                        phoneNumber: phoneNumberref.current.value,
+                        username: phoneNumberref.current.value,
                         password: passwordref.current.value,
 
                     }
