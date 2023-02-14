@@ -1,14 +1,32 @@
 import React, { useRef } from 'react';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'antd';
+import { getlanguagefromlocalstorage, setlanguagetolocalstorage } from '../utils/storage';
+import { useEffect } from 'react';
+import { useState } from 'react';
 const SignIn = () => {
+    const [state, setState] = useState(true)
+    const [lan, setlan] = useState(getlanguagefromlocalstorage())
     const firstnameref = useRef(null)
     const surnameref = useRef(null)
     const phoneNumberref = useRef(null)
     const passwordref = useRef(null)
     const submitpasswordref = useRef(null)
     const navigate = useNavigate()
+    const { t, i18n } = useTranslation()
+    function handleselect(e) {
+        console.log(e.target.value)
+        i18n.changeLanguage(e.target.value)
+        setlanguagetolocalstorage(e.target.value)
+        setlan(e.target.value)
+    }
+
+    useEffect(() => {
+        const language = getlanguagefromlocalstorage()
+        i18n.changeLanguage(language)
+    }, [])
     function regester(data) {
         let a = "sizning xatolariz\n "
 
@@ -43,10 +61,10 @@ const SignIn = () => {
     return <div className="addFed">
         <div className='nomsiz'>
             <div>
-                <h1>Hisobga kirish</h1>
-                <label htmlFor="yourPhoneNumber">Your phone number</label>
+                <h1>{t("SignIn")}</h1>
+                <label htmlFor="yourPhoneNumber">{t("PhoneNum")}</label>
                 <input type={'text'} placeholder='phoneNumber' id='yourPhoneNumber' ref={phoneNumberref} />
-                <label htmlFor="password">Parol kiriting</label>
+                <label htmlFor="password">{t("Password")}</label>
                 <input type={'password'} placeholder='password' id='password' ref={passwordref} />
 
 
@@ -59,7 +77,7 @@ const SignIn = () => {
                     regester(data)
                 }
 
-                }>Save</Button>
+                }>{t("Save")}</Button>
             </div>
         </div>
 

@@ -30,7 +30,7 @@ function Headmain(props) {
         <div style={{ backgroundColor: '#d8d8d8', textAlign: "center" }} className="headMain">
             <div className="header-nav">
                 <ul>
-                    <input onChange={editSrc} type="text" placeholder="Qidiruv" className='mainHeadInput' />
+                    <input onChange={editSrc} type="text" placeholder={t("QidiruvHeaderMain")} className='mainHeadInput' />
                     <button className={("btnhead", state ? "activbtnmain" : "")} onClick={() => {
                         setState(true)
                         setType("topdim")

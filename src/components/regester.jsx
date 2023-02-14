@@ -2,13 +2,32 @@ import React, { useRef } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'antd';
+import { getlanguagefromlocalstorage, setlanguagetolocalstorage } from '../utils/storage';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 const Regester = () => {
+    const [state, setState] = useState(true)
+    const [lan, setlan] = useState(getlanguagefromlocalstorage())
     const firstnameref = useRef(null)
     const surnameref = useRef(null)
     const emailref = useRef(null)
     const passwordref = useRef(null)
     const submitpasswordref = useRef(null)
     const navigate = useNavigate()
+    const { t, i18n } = useTranslation()
+    function handleselect(e) {
+        console.log(e.target.value)
+        i18n.changeLanguage(e.target.value)
+        setlanguagetolocalstorage(e.target.value)
+        setlan(e.target.value)
+    }
+
+    useEffect(() => {
+        const language = getlanguagefromlocalstorage()
+        i18n.changeLanguage(language)
+    }, [])
 
     //
 
@@ -62,16 +81,16 @@ const Regester = () => {
 
     return <div className="addFed">
         <div className='nomsiz'>
-            <h1>Ruyhatdan o'tish</h1>
-            <label htmlFor="firtname">Firtname</label>
+            <h1>{t("SignUpWindow")}</h1>
+            <label htmlFor="firtname">{t("Firstname")}</label>
             <input placeholder='firstname' id='firtname' ref={firstnameref} />
-            <label htmlFor="surname">Surname</label>
+            <label htmlFor="surname">{t("Surname")}</label>
             <input placeholder='surname' id='surname' ref={surnameref} />
-            <label htmlFor="yourPhoneNumber">Your phone number</label>
+            <label htmlFor="yourPhoneNumber">{t("Email")}</label>
             <input type={'email'} placeholder='email@google.com' id='yourPhoneNumber' ref={emailref} />
-            <label htmlFor="password">Parol kiriting</label>
+            <label htmlFor="password">{t("Password1")}</label>
             <input type={'password'} placeholder='password' id='password' ref={passwordref} />
-            <label htmlFor="submitpassword">Parolni qayta tering</label>
+            <label htmlFor="submitpassword">{t("Password2")}</label>
             <input type={'password'} placeholder='submit password' id='submitpassword' ref={submitpasswordref} />
 
 
@@ -86,7 +105,7 @@ const Regester = () => {
                 abbos(data)
             }
 
-            }>Save</Button>
+            }>{t("Save")}</Button>
 
         </div>
 
