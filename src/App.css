@@ -84,7 +84,10 @@ body {
   margin-top: 30px;
   border-radius: 10px;
 }
-
+.head-ul{
+  display: flex;
+  align-items: center;
+}
 .addelemLink {
   margin-top: 30px;
   padding-left: 20px;

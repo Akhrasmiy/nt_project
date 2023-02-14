@@ -12,7 +12,6 @@ const Main = () => {
   const [type, setType] = useState("topdim")
   const [update, setUpdate] = useState(0)
   const src=localStorage.getItem("src")
-  console.log(src)
 
   useEffect(() => {
     axios
